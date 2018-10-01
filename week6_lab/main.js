@@ -2,6 +2,7 @@ function addNewList() {
     alert('hello world!');
 }
 
+<<<<<<< HEAD
 function addListItem() {
     console.log('hello world');
     var list = document.getElementById("grocery-list");
@@ -10,6 +11,12 @@ function addListItem() {
     newItem.appendChild(document.createTextNode(itemInput.value));
     list.appendChild(newItem);
 }
+=======
+<!--jquery-->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<!-- javascript -->
+<script src="main.js" type="text/javascript"></script>
+>>>>>>> a9c714698103d2163bb30d293801c4b407c7b0dc
 
 function deleteListItem(item) {
 	    // remove li element (item) from ol element (item.parentNode)
@@ -26,6 +33,7 @@ function completeListItem(item) {
     }
 }
 
+<<<<<<< HEAD
 /* $(document).ready(function(){
     $("#add-item").click(function() { // bind handler for click event
         var list = $("#grocery-list"); // get the ol list by id
@@ -49,4 +57,13 @@ $(document).on("click", "#add-item", function() {
     var list = $("#grocery-list");
     var itemInput = $("#new-list-item");
     list.append("<li>" + itemInput.val() + " <button class='delete-item'>X</button></li>");
+=======
+$(document).ready(function(){
+    $("#add-item").click(function() { // bind handler for click event
+        var list = $("#grocery-list"); // get the ol list by id
+        var itemInput = $("#new-list-item"); // get the new item input
+	  // append the input value within an li element
+        list.append("<li>" + itemInput.val() + "</li>"); 
+    });
+>>>>>>> a9c714698103d2163bb30d293801c4b407c7b0dc
 });
